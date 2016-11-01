@@ -6,8 +6,8 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="top-header">
-				<div class="container">
+			<div class="container">
+				<div class="top-header">
 					<div class="logo-top">
 						<img src="#" width="100" height="50">
 					</div>
@@ -31,8 +31,8 @@
 						<a href="#">Корзина</a>
 					</div>
 				</div>
+				<h1 class="page-title">Магазин готовых шаблонов</h1>
 			</div>
-			<h1>Магазин готовых шаблонов</h1>
 		</header>
 		<main class="container">
 			<aside class="filters">
@@ -52,42 +52,41 @@
 						</div>
 					</div>
 					<div class="filter-title">Сетка:</div>
-						<div class="radio-filter">
+						<div class="filter-row">
 							<input type="radio" name="grid" value="adaptive" id="adaptive-grid" checked>
 							<label for="adaptive-grid">Адаптивная</label>
 						</div>
-						<div class="radio-filter">
+						<div class="filter-row">
 							<input type="radio" name="grid" value="fixed" id="fixed-grid">
 							<label for="fixed-grid">Фиксированная</label>
 						</div>
-						<div class="radio-filter">
+						<div class="filter-row">
 							<input type="radio" name="grid" value="responsive" id="responsive-grid">
 							<label for="responsive-grid">Резиновая</label>
 						</div>
 					<div class="filter-title">Особенности:</div>
-						<div class="options-filter">
-							<div class="option">
-								<input type="checkbox" name="slider" id="slider-field" checked>
-								<label for="slider-field">Слайдер</label>
-							</div>
-							<div class="option">
-								<input type="checkbox" name="advantages" id="advantages-field">
-								<label for="advantages-field">Блок преимуществ</label>
-							</div>
-							<div class="option">
-								<input type="checkbox" name="news" id="news-field" checked>
-								<label for="news-field">Новости</label>
-							</div>
-							<div class="option">
-								<input type="checkbox" name="gallery" id="gallery-field">
-								<label for="gallery-field">Галерея</label>
-							</div>
-							<div class="option">
-								<input type="checkbox" name="cart" id="cart-field">
-								<label for="cart-field">Корзина</label>
-							<button type="submit" value="Показать">
+						<div class="filter-row">
+							<input type="checkbox" name="slider" id="slider-field" checked>
+							<label for="slider-field">Слайдер</label>
+						</div>
+						<div class="filter-row">
+							<input type="checkbox" name="advantages" id="advantages-field">
+							<label for="advantages-field">Блок преимуществ</label>
+						</div>
+						<div class="filter-row">
+							<input type="checkbox" name="news" id="news-field" checked>
+							<label for="news-field">Новости</label>
+						</div>
+						<div class="filter-row">
+							<input type="checkbox" name="gallery" id="gallery-field">
+							<label for="gallery-field">Галерея</label>
+						</div>
+						<div class="filter-row">
+							<input type="checkbox" name="cart" id="cart-field">
+							<label for="cart-field">Корзина</label>
 						</div>
 					</div>
+					<button type="submit">Показать</button>
 				</form>
 			</aside>
 			<div class="catalog">
@@ -110,18 +109,19 @@
 						<a href="#"></a>
 						<a href="#"></a>
 					</div>
+				</div>
 				<div class="catalog-items">
 					<section class="catalog-item">
 						<div class="head">
 							<div class="circle"></div>
 						</div>
 						<div class="item-image">
-							<img src="#" alt="Sedona"></div>
+							<img src="#" alt="Sedona" width="50" height="100"></div>
 						</div>
 						<div class="item-content">
 							<a href="#" class="item-title">Sedona</a>
-								<p class="item-description">Информационный сайт для туристов</p>
-								<a class="btn">9 900р.</a>
+							<p class="item-description">Информационный сайт для туристов</p>
+							<a href="#" class="btn">9 900р.</a>
 						</div>
 					</section>
 					<section class="catalog-item">
@@ -129,7 +129,7 @@
 							<div class="circle"></div>
 						</div>
 						<div class="item-image">
-							<img src="#" alt="Pink-App"></div>
+							<img src="#" alt="Pink-App" width="50" height="100"></div>
 						</div>
 						<div class="item-content">
 							<a href="#" class="item-title">Pink App</a>
@@ -142,7 +142,7 @@
 							<div class="circle"></div>
 						</div>
 						<div class="item-image">
-							<img src="#" alt="Barbershop"></div>
+							<img src="#" alt="Barbershop" width="50" height="100"></div>
 						</div>
 						<div class="item-content">
 							<a href="#" class="item-title">Barbershop</a>
@@ -155,7 +155,7 @@
 							<div class="circle"></div>
 						</div>
 						<div class="item-image">
-							<img src="#" alt="Mishka"></div>
+							<img src="#" alt="Mishka" width="50" height="100"></div>
 						</div>
 						<div class="item-content">
 							<a href="#" class="item-title">Mishka</a>
@@ -168,7 +168,7 @@
 							<div class="circle"></div>
 						</div>
 						<div class="item-image">
-							<img src="#" alt="A-plus"></div>
+							<img src="#" alt="A-plus" width="50" height="100"></div>
 						</div>
 						<div class="item-content">
 							<a href="#" class="item-title">A plus</a>
@@ -181,7 +181,7 @@
 							<div class="circle"></div>
 						</div>
 						<div class="item-image">
-							<img src="#" alt="Кваст"></div>
+							<img src="#" alt="Кваст" width="50" height="100"></div>
 						</div>
 						<div class="item-content">
 							<a href="#" class="item-title">Кваст</a>
@@ -233,13 +233,12 @@
 		</footer>
 		<div class="popup">
 			<h2 class="popup-title">Напишите нам</h2>
-			<div class="x">
-				<a href="#"></a>
-			</div>
+			<button type="button"></button>
 			<form class="popup-form" action="#" method="post">
 				<div class="popup-name-field">
 					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
 					<label for="fullname">Ваше имя:</label>
+				</div>
 				<div class="popup-field">
 					<input type="text" name="email" id="email" placeholder="Для отправки ответа">
 					<label for="email">Ваш e-mail:</label>
@@ -248,7 +247,7 @@
 					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
 					<label for="message">Текст письма:</label>
         </div>
-				<input type="submit" class="btn" value="Отправить">
+				<button type="submit" class="btn">Отправить</button>
 			</form>
 		</div>
 	</body>
