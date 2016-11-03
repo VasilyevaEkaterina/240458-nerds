@@ -5,17 +5,51 @@ body {
   font-weight: normal;
   font-family:"Roboto", "Arial", sans-serif;
 }
-h1 {
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+b {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+}
+.slogan {
   font-size: 55px;
   line-height: 55px;
-  color: #000000;
   font-weight: bold;
-  font-family:"Roboto", "Arial", sans-serif;
 }
-h2 {
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: bold;
+}
+.about-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+.feature-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.promo-title {
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
-  font-weight: bolder;
-  font-family:"Roboto", "Arial", sans-serif;
+  font-weight: bold;
+}
+.contact-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.contact-info {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  font-weight: normal;
+}
+.active {
+  color: #666666;
 }
