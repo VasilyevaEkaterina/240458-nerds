@@ -5,16 +5,6 @@ body {
   font-weight: normal;
   font-family:"Roboto", "Arial", sans-serif;
 }
-p {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-}
-b {
-  font-size: 45px;
-  line-height: 10px;
-  font-weight: bold;
-}
 .slogan {
   font-size: 55px;
   line-height: 55px;
@@ -52,4 +42,159 @@ b {
 }
 .active {
   color: #666666;
+}
+
+/* Сетки главной */
+
+.container {
+  width: 1200px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 20px;
+}
+.logo-top {
+  width: 160px;
+  float:left;
+}
+.top-header {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.main-navigation {
+  width: 440px;
+  float:left;
+  margin-left: 200px;
+  padding-left: 20px;
+}
+.main-navigation li {
+  display: inline;
+}
+.user-block {
+  width: 130px;
+  float:right;
+}
+.main-header {
+  margin-bottom: 20px;
+}
+.slider {
+  width: 1200px;
+  min-height: 415px;
+}
+.slider-text{
+  width: 400px;
+  float:left;
+  text-align: left;
+  margin-bottom: 45px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.features {
+  width: 1200px;
+  margin-top: 82px;
+}
+.feature {
+  width: 300px;
+  margin-right: 100px;
+  float: left;
+}
+.feature:last-child {
+  margin-right: 0;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about-us {
+  width: 1160px;
+  margin-top: 120px;
+}
+.about-left {
+  width: 660px;
+  float: left;
+  margin-bottom: 118px;
+}
+.about-right {
+  width: 360px;
+  float: right;
+  margin-bottom: 118px;
+}
+.clients {
+  width: 1094px;
+  margin-top: 110px;
+  padding: 30px;
+}
+.client {
+  width: 215px;
+  float:left;
+  margin-bottom: 128px;
+  margin-right: 75px;
+}
+.client:last-child {
+  margin-right: 0;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.map {
+  width: 1200px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contacts {
+  width: 200px;
+  margin-left: 65px;
+  float: left;
+  margin-bottom: 187px;
+}
+.social-btns {
+  width: 260px;
+  float: left;
+  margin-bottom: 72px;
+}
+.promo-text {
+  width: 560px;
+  margin-right: 160px;
+  float: right;
+  margin-bottom: 72px;
+}
+.popup {
+  display: none;
+}
+
+/* Сетки каталога */
+.page-title {
+  text-align: center;
+}
+.filters {
+  width: 260px;
+  float:left;
+  min-height: 1800px;
+}
+.catalog {
+  width: 760px;
+  display: inline-block;
+}
+.sortby-form li {
+  display: inline;
+  float: right;
+}
+.catalog-item {
+  width: 360px;
+  float: left;
+  padding: 10px;
+}
+.item-content {
+  display: none;
+}
+.pagination {
+  display: inline;
 }
