@@ -14,6 +14,8 @@ body {
   font-size: 55px;
   line-height: 55px;
   font-weight: bold;
+  padding-top: 115px;
+  padding-bottom: 115px;
 }
 .about-title {
   font-size: 45px;
@@ -64,17 +66,17 @@ body {
   margin-left: 200px;
   padding-left: 20px;
 }
+.main-navigation ul {
+  font-size: 0;
+}
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
-  font-size: 14;
-  margin-right: 20px;
+  font-size: 14px;
+  padding-left: 40px;
 }
 .main-navigation li:last-child {
   margin-right: 0;
-}
-.main-navigation ul {
-  font-size: 0;
 }
 .user-block {
   width: 130px;
@@ -124,35 +126,41 @@ body {
   margin-bottom: 118px;
 }
 .clients-box {
+  font-size: 0;
+}
+.clients {
   display:inline-block;
   vertical-align:middle;
 }
-.clients {
-  font-size: 0;
-  padding: 30px;
-}
 .client {
   width: 215px;
-  margin-right: 75px;
 }
 .client img {
-  display: block;
+  display: inline-block;
+  vertical-align:middle;
 }
 .client-1 {
   width: 252;
+  margin-right: 44px;
+  margin-left: 30px;
 }
 .client-2 {
   width: 257;
+  margin-right: 60px;
 }
 .client-3 {
   width: 245;
+  margin-right: 60px;
 }
 .client-4 {
   width: 173;
   margin-right: 0;
+  margin-left: 37px;
 }
 .map {
   min-height: 416px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 .contacts {
   width: 200px;
@@ -180,28 +188,58 @@ body {
 .filters {
   width: 260px;
   float:left;
+  margin-right: 100px;
+}
+.price-range {
+  width: 260px;
+  float: left;
+}
+.filter-row {
+  float: left;
+  width: 160px;
+  margin-bottom: 16px;
+}
+.filter-btn {
+  float: left;
+  width: 260px;
+  margin-top: 50px;
+}
+.filter-title-top {
+  float: left;
+  width: 140px;
+  padding-bottom: 50px;
+  margin: 0px;
 }
 .filter-title {
   float: left;
   width: 140px;
-  padding: 0px;
+  padding-bottom: 21px;
   margin: 0px;
 }
 .catalog {
   width: 765px;
   display: inline-block;
-  font-size: 0px;
 }
 .sortby-form {
-  float: left;
-  width: 365px;
+  float: right;
+  width: 360px;
+  padding: 0;
+  margin: 0;
 }
 .sortby-form li {
   display: inline-block;
   vertical-align: top;
+  padding-left: 20px;
+}
+.catalog-items {
+  font-size: 0px;
+}
+.catalog-item {
+  font-size: 16px;
+  display: inline-block;
 }
 .catalog-item:nth-child(odd) {
-  padding-left: 10px;
+  padding-right: 40px;
 }
 .item-content {
   display: none;
@@ -209,4 +247,8 @@ body {
 .pagination li{
   display: inline-block;
   vertical-align: bottom;
+  padding-left: 50px;
+}
+.pagination li:first-child {
+  padding-left: 0;
 }
