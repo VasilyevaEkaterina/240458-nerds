@@ -47,17 +47,15 @@ body {
 /* Сетки главной */
 
 .container {
-  width: 1200px;
-  margin-left: 120px;
-  margin-right: 120px;
-  padding: 20px;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .logo-top {
   width: 160px;
   float:left;
 }
 .top-header {
-  display: inline-block;
   margin-bottom: 50px;
 }
 .main-navigation {
@@ -67,7 +65,16 @@ body {
   padding-left: 20px;
 }
 .main-navigation li {
-  display: inline;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14;
+  margin-right: 20px;
+}
+.main-navigation li:last-child {
+  margin-right: 0;
+}
+.main-navigation ul {
+  font-size: 0;
 }
 .user-block {
   width: 130px;
@@ -103,13 +110,7 @@ body {
 .feature:last-child {
   margin-right: 0;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .about-us {
-  width: 1160px;
   margin-top: 120px;
 }
 .about-left {
@@ -122,42 +123,44 @@ body {
   float: right;
   margin-bottom: 118px;
 }
+.clients-box {
+  display:inline-block;
+  vertical-align:middle;
+}
 .clients {
-  width: 1094px;
-  margin-top: 110px;
+  font-size: 0;
   padding: 30px;
 }
 .client {
   width: 215px;
-  float:left;
-  margin-bottom: 128px;
   margin-right: 75px;
 }
-.client:last-child {
+.client img {
+  display: block;
+}
+.client-1 {
+  width: 252;
+}
+.client-2 {
+  width: 257;
+}
+.client-3 {
+  width: 245;
+}
+.client-4 {
+  width: 173;
   margin-right: 0;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .map {
-  width: 1200px;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+  min-height: 416px;
 }
 .contacts {
   width: 200px;
-  margin-left: 65px;
-  float: left;
-  margin-bottom: 187px;
+  padding: 30px;
 }
 .social-btns {
   width: 260px;
-  float: left;
+  display: inline-block;;
   margin-bottom: 72px;
 }
 .promo-text {
@@ -177,24 +180,33 @@ body {
 .filters {
   width: 260px;
   float:left;
-  min-height: 1800px;
+}
+.filter-title {
+  float: left;
+  width: 140px;
+  padding: 0px;
+  margin: 0px;
 }
 .catalog {
-  width: 760px;
+  width: 765px;
   display: inline-block;
+  font-size: 0px;
+}
+.sortby-form {
+  float: left;
+  width: 365px;
 }
 .sortby-form li {
-  display: inline;
-  float: right;
+  display: inline-block;
+  vertical-align: top;
 }
-.catalog-item {
-  width: 360px;
-  float: left;
-  padding: 10px;
+.catalog-item:nth-child(odd) {
+  padding-left: 10px;
 }
 .item-content {
   display: none;
 }
-.pagination {
-  display: inline;
+.pagination li{
+  display: inline-block;
+  vertical-align: bottom;
 }
