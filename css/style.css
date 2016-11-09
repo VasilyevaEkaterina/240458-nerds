@@ -155,12 +155,7 @@ body {
   width: 260px;
   float: left;
   margin-bottom: 72px;
-}
-.promo-text {
-  width: 560px;
-  margin-right: 160px;
-  float: right;
-  margin-bottom: 72px;
+  font-size: 0;
 }
 .social-btn-vk {
   display: inline-block;
@@ -173,6 +168,12 @@ body {
 .social-btn-inst {
   display: inline-block;
   vertical-align: middle;
+}
+.promo-text {
+  width: 560px;
+  margin-right: 160px;
+  float: right;
+  margin-bottom: 72px;
 }
 .popup {
   display: none;
@@ -230,6 +231,7 @@ body {
 }
 .arrows {
   float: right;
+  width: 40px;
 }
 .catalog-items {
   font-size: 0px;
@@ -237,12 +239,16 @@ body {
 .catalog-item {
   font-size: 16px;
   display: inline-block;
+  vertical-align: top;
 }
 .catalog-item:nth-child(odd) {
   margin-right: 40px;
 }
 .item-content {
   display: none;
+}
+.pagination ul {
+  font-size: 0;
 }
 .pagination li{
   display: inline-block;
