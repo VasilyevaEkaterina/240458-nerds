@@ -3,14 +3,18 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Магазин готовых шаблонов</title>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="container clearfix">
-				<div class="top-header">
+			<div class="container">
+				<div class="top-header clearfix">
 					<div class="logo-top">
-						<img src="img/nerds-logo.png" width="160" height="65">
+						<a href="./index.html">
+							<img src="img/nerds-logo.png" width="160" height="65">
+						</a>
 					</div>
 					<nav class="main-navigation">
 						<ul>
@@ -37,21 +41,21 @@
 		</header>
 		<main class="container clearfix">
 			<aside class="filters">
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<div class="filter-title-top">Стоимость:</div>
-					<div class="price-range">
-						<div class="range-form">
-							<input type="range" min="0" max="15000" step="100" value="11000">
-						</div>
-						<div class="price-range">
-							<label for="price-from">От</label>
-							<input type="text" name="price-from" id="price-from" placeholder="0">
-						</div>
-						<div class="price-range">
-							<label for="price-up">До</label>
-							<input type="text" name="price-up" id="price-up" placeholder="15 000">
-						</div>
-					</div>
+				<form action="https://echo.htmlacademy.ru" method="get">
+				<div class="filter-title-top">Стоимость:</div>
+				<div class="range-filter">
+		      <div class="range-controls">
+		        <div class="scale">
+		          <div class="bar" style="margin-left: 0%; width: 50%"></div>
+		        </div>
+		        <div class="toggle min-toggle"></div>
+		        <div class="toggle max-toggle"></div>
+		      </div>
+		      <div class="price-controls">
+		        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+		        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+		      </div>
+		    </div>
 					<div class="filter-title">Сетка:</div>
 					<div class="filter-row">
 						<input type="radio" name="grid" value="adaptive" id="adaptive-grid" checked>

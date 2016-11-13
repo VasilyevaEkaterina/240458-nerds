@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -35,26 +37,38 @@
 				</div>
 			</div>
 			<div class="slider">
-				<div class="slider-text">
-					<h2 class="slogan">Долго, дорого, скрупулезно.</h2>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-						<a class="btn" href="#">Узнать больше</a>
-				</div>
-				<div class="wrapper">
-					<input type="radio" name="point" id="slide1" checked>
-					<input type="radio" name="point" id="slide2">
-					<input type="radio" name="point" id="slide3">
-				<div class="slider-list">
-						<div class="slides slide1"></div>
-						<div class="slides slide2"></div>
-						<div class="slides slide3"></div>
-					</div>
-				<div class="controls">
-					<label for="slide1"></label>
-					<label for="slide2"></label>
-					<label for="slide3"></label>
-				</div>
-			</div>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любим математику как никто другой</div>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только ночь, только хардкор</div>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
 		</header>
 		<main class="container">
 			<div class="features clearfix">
@@ -77,11 +91,11 @@
 					<a class="btn btn-yellow" href="#">Заказать</a>
 				</div>
 			</div>
-			<div class="about-us clearfix">
+			<div class="about-us">
 				<div class="about-left">
 					<h2 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<p class="about-text">Выполняем заказы на разработку:</h3>
+					<p class="about-text">Выполняем заказы на разработку:</p>
 					<ul>
 						<li>Веб-сайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
@@ -93,23 +107,23 @@
 						<img src="img/logo.jpg" width="360" height="208">
 						<p class="about-text">С 2004 года любим точность во всем:</p>
 					</div>
-					<ul class="numbers">
-						<li>
-							<b>146%</b>
-							Уровень самоотдачи
-						</li>
-						<li>
-							<b>100%</b>
-							Соблюдение сроков
-						</li>
-						<li>
-							<b>50%</b>
-							Минимальная предоплата
-						</li>
-					</ul>
+						<ul class="numbers">
+							<li>
+								<b>146<sup>%</sup></b>
+								<p>Уровень самоотдачи</p>
+							</li>
+							<li>
+								<b>100<sup>%</sup></b>
+								<p>Соблюдение сроков</p>
+							</li>
+							<li>
+								<b>50<sup>%</sup></b>
+								<p>Минимальная предоплата</p>
+							</li>
+						</ul>
 				</div>
 			</div>
-			<div class="clients clearfix">
+			<div class="clients">
 				<a class="client client-1" href="#">
 					<img src="img/logo-1.png" width="199" height="68">
 				</a>
