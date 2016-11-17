@@ -24,8 +24,8 @@
 							<li>
 								<a href="#">Клиенты</a>
 							</li>
-							<li>
-								<a class="active">Магазин</a>
+							<li class="active">
+								<a>Магазин</a>
 							</li>
 							<li>
 								<a href="#">Контакты</a>
@@ -42,11 +42,11 @@
 		<main class="container clearfix">
 			<aside class="filters">
 				<form action="https://echo.htmlacademy.ru" method="get">
-				<div class="filter-title-top">Стоимость:</div>
+				<div class="filter-title">Стоимость:</div>
 				<div class="range-filter">
 		      <div class="range-controls">
 		        <div class="scale">
-		          <div class="bar" style="margin-left: 0%; width: 50%"></div>
+		          <div class="bar" style="margin-left: 0%; width: 70%"></div>
 		        </div>
 		        <div class="toggle min-toggle"></div>
 		        <div class="toggle max-toggle"></div>
@@ -95,7 +95,7 @@
 			</aside>
 			<div class="catalog">
 				<div class="sort clearfix">
-					<div class="filter-title-top">Сортировать:</div>
+					<div class="sortby-title">Сортировать:</div>
 					<ul class="sortby-form">
 						<li>
 							<a class="active">По цене</a>
@@ -233,20 +233,21 @@
 					</div>
 				</div>
 		</footer>
-		<div class="popup">
-			<h2 class="popup-title">Напишите нам</h2>
-			<button type="button" class="close-btn">Крестик</button>
-			<form class="popup-form" action="#" method="post">
-				<div class="popup-name-field">
-					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+		<div class="feedback">
+			<h2 class="feedback-title">Напишите нам</h2>
+			<button type="button" class="close-btn"></button>
+			<form class="feedback-form" action="#" method="post">
+				<div class="feedback-name-field">
 					<label for="fullname">Ваше имя:</label>
-				<div class="popup-field">
-					<input type="text" name="email" id="email" placeholder="Для отправки ответа">
-					<label for="email">Ваш e-mail:</label>
+					<input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
 				</div>
-				<div class="popup-field">
-					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+				<div class="feedback-email-field">
+					<label for="email">Ваш e-mail:</label>
+					<input type="text" name="email" id="email" placeholder="Для отправки ответа">
+				</div>
+				<div class="feedback-text-field">
 					<label for="message">Текст письма:</label>
+					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
 				</div>
 				<input type="submit" class="btn" value="Отправить">
 			</form>
