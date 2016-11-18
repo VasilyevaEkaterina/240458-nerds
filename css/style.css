@@ -993,11 +993,18 @@ input[type="checkbox"]:checked + label:hover::after {
   width: 360px;
   border-radius: 3px;
 }
+.catalog-item:hover {
+  box-shadow: 0 3px 10px 1px #eeeeee;
+}
 .catalog-item:hover .head {
   background-color: #4d4d4d;
   height: 41px;
   width: 360px;
   border-radius: 3px;
+}
+.catalog-item:hover .item-content {
+  display: block;
+  background: #eeeeee;
 }
 .circle {
   position: relative;
@@ -1084,10 +1091,6 @@ input[type="checkbox"]:checked + label:hover::after {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 20px;
-}
-.catalog-item:hover .item-content {
-  display: block;
-  background: #eeeeee;
 }
 .item-content .btn {
   display: inline-block;
