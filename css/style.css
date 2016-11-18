@@ -86,7 +86,7 @@ body {
   background-color: #eeeeee;
 }
 .main-navigation .active a {
-  color: #bdbdbd;
+  color: #000000;
   position: relative;
 }
 .main-navigation .active a::after {
@@ -100,28 +100,36 @@ body {
 .map {
   background:#eeeeee url("../img/map.jpg") no-repeat;
   background-position: center;
-  height: 416px;
+  background-size: cover;
   margin-top: 40px;
-  position: relative;
+  padding-top: 55px;
+  padding-bottom: 54px;
 }
 .contacts {
   width: 220px;
   background: white;
-  padding: 48px 50px;
-  position: absolute;
-  top: 55px;
+  padding: 48px 51px;
+  padding-right: 49px;
+  padding-bottom: 46px;
+  padding-left: 50px;
 }
 .contact-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 .contact-info {
-  margin-bottom: 30px;
+  color: #666666;
+  width: 215px;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 19px;
 }
 .btn {
   text-transform: uppercase;
@@ -139,20 +147,40 @@ body {
   color: #ffffff;
   border-radius: 3px;
 }
-.contacts .btn {
+.btn:active {
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 45px;
+  padding: 15px 40px;
+  padding-top: 12px;
+  background: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  border-top: 3px solid #c13135;
+}
+.contacts-btn {
+  display: inline-block;
+  margin-top: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 13px 45px;
   background: #fb565a;
   color: #ffffff;
   border-radius: 3px;
 }
-.contacts .btn:hover {
+.contacts-btn:hover {
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 45px;
+  padding: 13px 45px;
   background: #e74246;
   color: #ffffff;
+  border-radius: 3px;
+}
+.contacts-btn:active {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 13px 45px;
+  background: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
 }
 .footer-bottom {
@@ -182,11 +210,27 @@ body {
   height: 79px;
   border-radius: 50%;
 }
+.social-btn:active{
+  position: relative;
+  padding-right: 75px;
+  background: #d7373b;
+  width: 5px;
+  height: 79px;
+  border: inset 2px solid #c13135;
+  border-radius: 50%;
+}
 .social-btn::before {
   position: absolute;
   content: "";
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+}
+.social-btn:active::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  opacity: 30%;
 }
 .social-btn-vk {
   display: inline-block;
@@ -257,28 +301,31 @@ body {
 .slider-controls{
   position: absolute;
   width: 200px;
-  bottom: 100px;
-  right: 480px;
+  bottom: 98px;
+  right: 479px;
   height: 17px;
   margin-left: -100px;
   text-align: center;
   z-index: 1000;
 }
 .slider-controls label{
-  display:inline-block;
-  width:5px;
-  height:5px;
-  margin:0 7px;
-  background:white;
-  border:7px solid white;
-  vertical-align:top;
-  border-radius:50%;
-  cursor:pointer;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 6px;
+  background: #ffffff;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
 }
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background:#c1c1c1;
+  background-color: white;
+  background-image: url("../img/sprite.png");
+  width: 18px;
+  height: 18px;
+  background-position: -10px -417px;
 }
 .slide {
   position: absolute;
@@ -289,7 +336,7 @@ body {
   overflow: hidden;
 }
 .slide-text {
-  width: 382px;
+  width: 520px;
   margin: 0;
   margin-top: 67px;
   padding: 0;
@@ -303,7 +350,7 @@ body {
   margin-bottom: 29px;
 }
 .slide-text p {
-  width: 360px;
+  width: 415px;
 }
 .slide .btn{
   display: inline-block;
@@ -531,11 +578,14 @@ body {
   text-transform: uppercase;
   padding: 0;
 }
+sup {
+  font-size: 27px;
+}
 .numbers p {
+  font-size: 16px;
   padding: 0;
   margin: 0;
-  margin-top: 43px;
-  margin-left: 3px;
+  margin-top: 42px;
 }
 /* Логотипы клиентов*/
 .clients {
@@ -606,7 +656,7 @@ body {
   text-align: center;
   margin: 0;
   padding-top: 68px;
-  padding-bottom: 112px;
+  padding-bottom: 111px;
   margin-bottom: 53px;
 }
 /* Боковое меню */
@@ -615,9 +665,8 @@ body {
   float: left;
 }
 .filter-row {
-  float: left;
   width: 270px;
-  margin-bottom: 12px;
+  margin-bottom: 19px;
 }
 .filter-title {
   width: 140px;
@@ -627,11 +676,13 @@ body {
   font-weight: bold;
   margin: 0px;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 20px;
+  padding-top: 5px;
 }
 .range-filter {
   width: 260px;
-  margin-bottom: 20px;
+  margin-bottom: 53px;
+  margin-top: 50px;
 }
 .range-controls {
   position: relative;
@@ -641,6 +692,7 @@ body {
   padding-left: 20px;
   background: #eeeeee;
   border-radius: 3px;
+  margin-bottom: 13px;
 }
 .range-controls .scale {
   height: 2px;
@@ -674,6 +726,7 @@ body {
 }
 .price-controls label {
   font-size: 16px;
+  text-transform: uppercase;
   display: inline-block;
   width: 50%;
 }
@@ -681,8 +734,8 @@ body {
   text-align: right;
 }
 .price-controls input {
-  width: 81px;
-  height: 40px;
+  width: 82px;
+  height: 37px;
   padding: 0;
   margin-left: 10px;
   border: none;
@@ -702,7 +755,7 @@ input[type="radio"] + label {
   display: block;
   margin: 0;
   line-height: 20px;
-  padding-left: 30px;
+  padding-left: 36px;
   position: relative;
   cursor: pointer;
 }
@@ -710,10 +763,10 @@ input[type="radio"] + label::before {
   content: "";
   display: block;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   background: white;
-  border: 2px solid #b8b8b8;
+  border: 3px solid #b8b8b8;
   border-radius: 15px;
   left: 0;
   top: -1px;
@@ -722,10 +775,10 @@ input[type="radio"] + label:hover::before {
   content: "";
   display: block;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   background: white;
-  border: 2px solid #4d4d4d;
+  border: 3px solid #4d4d4d;
   border-radius: 15px;
   left: 0;
   top: -1px;
@@ -736,8 +789,8 @@ input[type="radio"]:checked + label::after {
   position: absolute;
   left: 8px;
   top: 7px;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 10px;
   background: #b8b8b8;
 }
@@ -747,10 +800,21 @@ input[type="radio"]:checked + label:hover::after {
   position: absolute;
   left: 8px;
   top: 7px;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 10px;
   background: #4d4d4d;
+}
+.filter-checkbox-title {
+  width: 140px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 input[type="checkbox"] {
   display: none;
@@ -759,7 +823,7 @@ input[type="checkbox"] + label {
   display: block;
   margin: 0;
   line-height: 20px;
-  padding-left: 30px;
+  padding-left: 36px;
   position: relative;
   cursor: pointer;
 }
@@ -808,9 +872,10 @@ input[type="checkbox"]:checked + label:hover::after {
   background-position: -10px -174px;
 }
 .filter-btn {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   width: 260px;
-  margin-top: 40px;
+  margin-top: 35px;
   text-transform: uppercase;
   text-align: center;
   padding: 15px 35px;
@@ -839,12 +904,13 @@ input[type="checkbox"]:checked + label:hover::after {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  margin-right: 265px;
+  margin-right: 260px;
+  margin-left: 6px;
   margin-bottom: 54px;
 }
 .sortby-form {
   float: left;
-  width: 320px;
+  width: 310px;
   padding: 0;
   margin: 0;
   cursor: pointer;
@@ -879,7 +945,7 @@ input[type="checkbox"]:checked + label:hover::after {
 .arrow-down::before {
   position: absolute;
   content: "";
-  top: 7px;
+  top: 9px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -889,7 +955,7 @@ input[type="checkbox"]:checked + label:hover::after {
 .arrow-down:hover::before {
   position: absolute;
   content: "";
-  top: 7px;
+  top: 9px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -899,8 +965,8 @@ input[type="checkbox"]:checked + label:hover::after {
 .arrow-up::before {
   position: absolute;
   content: "";
-  top: 7px;
-  left: 25px;
+  top: 9px;
+  left: 27px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -910,8 +976,8 @@ input[type="checkbox"]:checked + label:hover::after {
 .arrow-up:hover::before {
   position: absolute;
   content: "";
-  top: 7px;
-  left: 25px;
+  top: 9px;
+  left: 27px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -927,7 +993,7 @@ input[type="checkbox"]:checked + label:hover::after {
   width: 360px;
   border-radius: 3px;
 }
-.head:hover {
+.catalog-item:hover .head {
   background-color: #4d4d4d;
   height: 41px;
   width: 360px;
@@ -936,7 +1002,7 @@ input[type="checkbox"]:checked + label:hover::after {
 .circle {
   position: relative;
   top: 14px;
-  left: 20px;
+  left: 15px;
   width: 14px;
   height: 14px;
   background: white;
@@ -956,7 +1022,7 @@ input[type="checkbox"]:checked + label:hover::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 45px;
+  left: 46px;
   width: 14px;
   height: 14px;
   background: white;
@@ -974,19 +1040,62 @@ input[type="checkbox"]:checked + label:hover::after {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+  position: relative;
 }
 .catalog-item img {
   border-radius: 3px;
-}
-.catalog-item img:hover {
-  border-radius: 3px;
-  box-shadow: 0 0 9px 2px #d5d5d5;
 }
 .catalog-item:nth-child(odd) {
   margin-right: 40px;
 }
 .item-content {
   display: none;
+  position: absolute;
+  background: #eeeeee;
+  width: 220px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  bottom: 7px;
+  left: 0;
+  text-align: center;
+}
+.item-description {
+  width: 230px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+  color: #666666;
+  line-height: 18px;
+  font-size: 16px;
+}
+.item-title {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.catalog-item:hover .item-content {
+  display: block;
+  background: #eeeeee;
+}
+.item-content .btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: lowercase;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 /* Pagination */
 .pagination ul {
@@ -1000,6 +1109,8 @@ input[type="checkbox"]:checked + label:hover::after {
   padding: 10px 20px;
   background: #eeeeee;
   border-radius: 3px;
+  margin-bottom: 8px;
+  margin-top: 10px;
 }
 .pagination a {
   text-decoration: none;
@@ -1016,39 +1127,42 @@ input[type="checkbox"]:checked + label:hover::after {
   border: 3px solid #dfdfdf;
   background: white;
 }
-.next-page {
+.pagination .next-page {
   text-transform: uppercase;
+  padding: 10px 45px;
 }
 /* Форма обратной связи (pop-up)*/
 .feedback {
   display: none;
-  position: absolute;
-  top: 500px;
-  left: 50%;
-  margin-left: -480px;
-  width: 963px;
+  position: fixed;
+  z-index: 2000;
+  top: 50px;
+  left: 250px;
+  width: 760px;
   color: #000000;
   background: white;
   box-shadow: 0 6px 35px 2px black;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 70px;
+  padding-bottom: 84px;
+}
+.feedback-show {
+  display: block;
 }
 .feedback-title {
+  position: relative;
   text-align: left;
   margin: 0;
   padding: 0;
   font-size: 45px;
-  margin-bottom: 30px;
-  margin-top: 70px;
-  margin-left: 100px;
-}
-.feedback-form {
-  padding: 30px 100px;
-  padding-bottom: 84px;
+  margin-bottom: 43px;
 }
 .close-btn {
   position: absolute;
-  top: 80px;
-  right: 90px;
-  width:21px;
+  top: 70px;
+  right: 75px;
+  width: 21px;
   height: 21px;
   font-size: 0;
   border: 0;
@@ -1076,21 +1190,22 @@ input[type="checkbox"]:checked + label:hover::after {
 .feedback-name-field {
   font-weight: bold;
   float: left;
-  width: 360px;
+  width: 340px;
   color: #7f7f7f;
+  margin-right: 40px;
 }
 .feedback-email-field {
   font-weight: bold;
   float: right;
-  width: 360px;
+  width: 340px;
 }
 .feedback-text-field  {
   font-weight: bold;
   width: 760px;
   clear: both;
 }
-input[type="text"] {
-  width: 360px;
+.feedback input[type="text"] {
+  width: 340px;
   height: 50px;
   border: 2px solid #eeeeee;
   border-radius: 3px;
@@ -1098,13 +1213,13 @@ input[type="text"] {
   margin-bottom: 35px;
   padding-left: 20px;
 }
-input:hover[type="text"] {
+.feedback input:hover[type="text"] {
   border: 2px solid #b4b9bb;
 }
-label {
+.feedback label {
   width: 110px;
 }
-textarea {
+.feedback textarea {
   width: 760px;
   margin-top: 12px;
   margin-bottom: 47px;
@@ -1113,11 +1228,17 @@ textarea {
   padding-left: 20px;
   padding-top: 13px;
   padding-bottom: 86px;
+  resize: none;
 }
-textarea:hover {
+.feedback textarea:hover {
   border: 2px solid #b4b9bb;
 }
 .feedback .btn {
   border: 0;
   padding: 16px 80px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }

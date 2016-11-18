@@ -53,7 +53,7 @@
 		      </div>
 		      <div class="price-controls">
 		        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-		        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+		        <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
 		      </div>
 		    </div>
 					<div class="filter-title">Сетка:</div>
@@ -69,7 +69,7 @@
 						<input type="radio" name="grid" value="responsive" id="responsive-grid">
 						<label for="responsive-grid">Резиновая</label>
 					</div>
-					<div class="filter-title">Особенности:</div>
+					<div class="filter-checkbox-title">Особенности:</div>
 					<div class="filter-row">
 						<input type="checkbox" name="slider" id="slider-field" checked>
 						<label for="slider-field">Слайдер</label>
@@ -148,7 +148,7 @@
 						</div>
 						<div class="item-content">
 							<a href="#" class="item-title">Barbershop</a>
-								<p class="item-description">Сайт салона красоты.Для мужчин, да.</p>
+								<p class="item-description">Сайт салона красоты. Для мужчин, да.</p>
 								<a class="btn">9 900р.</a>
 						</div>
 					</section>
@@ -213,9 +213,9 @@
 				<div class="container">
 					<div class="contacts">
 						<h2 class="contact-title">Nёrds Design Studio</h2>
-						<p class="contact-info">191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>
+						<p class="contact-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p class="contact-info">тел. +7 (812) 275-75-75</p>
-						<a class="btn">Напишите нам</a>
+						<a class="contacts-btn">Напишите нам</a>
 					</div>
 				</div>
 			</div>
@@ -252,5 +252,22 @@
 				<input type="submit" class="btn" value="Отправить">
 			</form>
 		</div>
+		<script>
+
+			var link = document.querySelector(".contacts-btn");
+			var popup = document.querySelector(".feedback");
+			var close = document.querySelector(".close-btn");
+
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("feedback-show");
+			});
+
+			close.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.remove("feedback-show");
+			});
+
+		</script>
 	</body>
 </html>

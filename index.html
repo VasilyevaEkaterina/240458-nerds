@@ -49,7 +49,7 @@
           <div class="slide">
             <div class="slide-text">
               <div class="slide-title">Долго, дорого, скрупулезно.</div>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <p>Математически выверенный дизайн<br/>для вашего сайта или мобильного приложения.</p>
               <a class="btn" href="#">Узнать больше</a>
             </div>
           </div>
@@ -63,7 +63,7 @@
           <div class="slide">
             <div class="slide-text">
               <div class="slide-title">Только ночь, только хардкор</div>
-              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <p>Работать днем, как все? Мы против этого.<br/>Ближе к полуночи работа только начинается.</p>
               <a class="btn" href="#">Узнать больше</a>
             </div>
           </div>
@@ -143,9 +143,9 @@
 				<div class="container">
 					<div class="contacts">
 						<h2 class="contact-title">Nёrds Design Studio</h2>
-						<p class="contact-info">191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>
+						<p class="contact-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p class="contact-info">тел. +7 (812) 275-75-75</p>
-						<a class="btn">Напишите нам</a>
+						<a class="contacts-btn">Напишите нам</a>
 					</div>
 				</div>
 			</div>
@@ -163,9 +163,11 @@
 					</div>
 				</div>
 		</footer>
-		<div class="feedback">
-			<h2 class="feedback-title">Напишите нам</h2>
-			<button type="button" class="close-btn"></button>
+		<div class="feedback clearfix">
+			<div class="feedback-top">
+				<h2 class="feedback-title">Напишите нам</h2>
+				<button type="button" class="close-btn"></button>
+			</div>
 			<form class="feedback-form" action="#" method="post">
 				<div class="feedback-name-field">
 					<label for="fullname">Ваше имя:</label>
@@ -182,5 +184,22 @@
 				<input type="submit" class="btn" value="Отправить">
 			</form>
 		</div>
+		<script>
+
+			var link = document.querySelector(".contacts-btn");
+			var popup = document.querySelector(".feedback");
+			var close = document.querySelector(".close-btn");
+
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("feedback-show");
+			});
+
+			close.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.remove("feedback-show");
+			});
+
+		</script>
 	</body>
 </html>
