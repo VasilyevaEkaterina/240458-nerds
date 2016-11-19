@@ -5,7 +5,6 @@ var form = document.querySelector(".feedback-form");
 var fullname = document.querySelector("[name=fullname]");
 var email = document.querySelector("[name=email]");
 var message = document.querySelector("[name=message]");
-var storage = localStorage.getItem("email");
 var storage = localStorage.getItem("fullname");
 
 link.addEventListener("click", function(event) {
@@ -14,7 +13,6 @@ link.addEventListener("click", function(event) {
 
   if (storage) {
     fullname.value = storage;
-    email.value = storage;
     message.focus();
   } else {
     fullname.focus();
@@ -24,15 +22,14 @@ link.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("feedback-show");
-  popup.classList.remove("feedback-error")
+  popup.classList.remove("feedback-error");
 });
 
 form.addEventListener("submit", function(event) {
   if(!fullname.value || !email.value) {
     event.preventDefault();
-    popup.classList.add("feedback-error")
+    popup.classList.add("feedback-error");
   } else {
     localStorage.setItem("fullname", fullname.value);
-    localStorage.setItem("email", email.value);
   }
 });
