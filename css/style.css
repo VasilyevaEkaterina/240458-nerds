@@ -110,6 +110,13 @@ body {
   background-size: cover;
   margin-top: 40px;
   position: relative;
+  width: 100%;
+  height: 417px;
+}
+.map iframe {
+  width: 100%;
+  height: 417px;
+  border: none;
 }
 .main-footer .container {
   padding: 0;
@@ -123,8 +130,9 @@ body {
 }
 .contacts {
   position: absolute;
-  top: 52px;
-  left: 140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-580px, -50%);
   width: 220px;
   background: #ffffff;
   padding: 48px 51px;
