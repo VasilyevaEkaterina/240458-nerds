@@ -104,7 +104,6 @@ body {
   background-color: #eeeeee;
 }
 /* Контакты */
-
 .map {
   background:#eeeeee url("../img/map.jpg") no-repeat;
   background-position: center;
@@ -116,6 +115,11 @@ body {
   padding: 0;
   margin: 0;
   width: 1440px;
+}
+.footer-bottom .container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .contacts {
   position: absolute;
@@ -1324,7 +1328,8 @@ sup {
 }
 .feedback-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 .feedback-top {
   position: relative;
@@ -1397,7 +1402,8 @@ sup {
 }
 .error {
   color: #e74246;
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 .feedback input:hover[type="text"] {
   border: 2px solid #b4b9bb;
@@ -1433,14 +1439,25 @@ sup {
   display: table;
   clear: both;
 }
+@-webkit-keyframes bounce {
+  0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
+  70% { -webkit-transform: translateX(30px); transform: translateX(30px); }
+  90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
 @keyframes bounce {
-  0% { transform: translateX(-2000px); }
-  70% { transform: translateX(30px); }
-  90% { transform: translateX(-10px); }
-  100% { transform: translateX(0); }
+  0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
+  70% { -webkit-transform: translateX(30px); transform: translateX(30px); }
+  90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+@-webkit-keyframes shake {
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
 }
