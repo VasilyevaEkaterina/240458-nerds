@@ -20,7 +20,7 @@ body {
   cursor: pointer;
 }
 .logo-top img:hover {
-  background-image: url("../img/nerds-logo hvr.png");
+  opacity: 0.8;
 }
 .logo-top:active {
   opacity: 0.3;
@@ -45,8 +45,9 @@ body {
   vertical-align: top;
   font-size: 16px;
   margin-right: 45px;
+  margin-bottom: 10px;
 }
-.main-navigation li:last-child {
+.main-navigation li:nth-child(4n) {
   margin-right: 0;
 }
 .main-navigation a {
@@ -167,6 +168,7 @@ body {
 }
 .contacts-btn {
   display: inline-block;
+  vertical-align: top;
   margin-top: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -209,6 +211,7 @@ body {
   height: 79px;
   border-radius: 50%;
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 .social-btn:hover {
   position: relative;
@@ -303,7 +306,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 /* Главная */
 .slider{
   position:relative;
@@ -314,7 +316,7 @@ body {
   position: absolute;
   opacity: 0;
 }
-.slider-controls{
+.slider-controls {
   position: absolute;
   width: 200px;
   bottom: 98px;
@@ -324,8 +326,9 @@ body {
   text-align: center;
   z-index: 1000;
 }
-.slider-controls label{
+.slider-controls label {
   display: inline-block;
+  vertical-align: bottom;
   width: 18px;
   height: 18px;
   margin: 0 6px;
@@ -614,7 +617,7 @@ body {
 }
 .numbers li {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   font-size: 14px;
   line-height: 18px;
   width: 100px;
@@ -689,18 +692,10 @@ sup {
 .client img {
   display: inline-block;
   vertical-align: middle;
+  opacity: 0.2;
 }
-.client-1 img:hover {
-  background: url("../img/logo-1.png hvr.png");
-}
-.client-2 img:hover {
-  background: url("../img/logo-2.png hvr.png");
-}
-.client-3 img:hover {
-  background: url("../img/logo-3.png hvr.png");
-}
-.client-4 img:hover {
-  background: url("../img/logo-4.png hvr.png");
+.client img:hover {
+  opacity: 1;
 }
 .client:active {
   opacity: 0.1;
@@ -713,8 +708,8 @@ sup {
   text-align: center;
   margin: 0;
   padding-top: 68px;
-  padding-bottom: 112px;
-  margin-bottom: 53px;
+  padding-bottom: 110px;
+  margin-bottom: 54px;
 }
 /* Боковое меню */
 .filters {
@@ -785,6 +780,7 @@ sup {
   font-size: 16px;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: bottom;
   width: 50%;
 }
 .max-price {
@@ -999,7 +995,7 @@ sup {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  margin-right: 260px;
+  margin-right: 259px;
   margin-left: 6px;
   margin-bottom: 54px;
 }
@@ -1093,7 +1089,7 @@ sup {
   background-color: #e9e9e9;
   height: 41px;
   width: 360px;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
 }
 .catalog-item:hover {
   box-shadow: 0 3px 8px 1px #999999;
@@ -1102,7 +1098,7 @@ sup {
   background-color: #4d4d4d;
   height: 41px;
   width: 360px;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
 }
 .catalog-item:hover .item-content {
   display: block;
@@ -1154,7 +1150,6 @@ sup {
 }
 .catalog-item img {
   display: block;
-  border-radius: 3px;
 }
 .catalog-item:nth-child(odd) {
   margin-right: 40px;
@@ -1299,6 +1294,7 @@ sup {
   position: relative;
 }
 .feedback-title {
+  color: black;
   text-align: left;
   margin: 0;
   padding: 0;
@@ -1319,7 +1315,7 @@ sup {
   background-color: white;
 }
 .close-btn::before {
-  position: absolute;
+  display: block;
   content:"";
   width: 21px;
   height: 21px;
@@ -1328,9 +1324,9 @@ sup {
   opacity: 0.3;
 }
 .close-btn:hover::before {
-  position: absolute;
   content: "";
   opacity: 1;
+  display: block;
 }
 .close-btn:active {
   opacity: 0.3;
@@ -1363,24 +1359,16 @@ sup {
   margin-bottom: 35px;
   padding-left: 20px;
 }
-.feedback-error {
-  animation: shake 0.6s;
-}
-input .feedback-error {
-  width: 340px;
-  height: 50px;
-  border: 2px solid #e74246;
-  border-radius: 3px;
-  margin-top: 12px;
-  margin-bottom: 35px;
-  padding-left: 20px;
+.error {
   color: #e74246;
+  animation: shake 0.6s;
 }
 .feedback input:hover[type="text"] {
   border: 2px solid #b4b9bb;
 }
 .feedback label {
   width: 110px;
+  color: black;
 }
 .feedback textarea {
   width: 760px;

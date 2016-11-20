@@ -22,13 +22,17 @@ link.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("feedback-show");
-  popup.classList.remove("feedback-error");
+  popup.classList.remove("error");
 });
 
 form.addEventListener("submit", function(event) {
+  fullname.classList.remove("error");
+  email.classList.remove("error");
   if(!fullname.value || !email.value) {
     event.preventDefault();
-    popup.classList.add("feedback-error");
+    popup.classList.add("error");
+    if(!fullname.value) fullname.classList.add("error");
+    if(!email.value) email.classList.add("error");
   } else {
     localStorage.setItem("fullname", fullname.value);
   }
