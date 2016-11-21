@@ -489,6 +489,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .feature p {
   margin: 0;
@@ -741,12 +742,11 @@ sup {
 .page-title {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   margin: 0;
   margin-top: 68px;
   padding-bottom: 111px;
-
 }
 /* Боковое меню */
 .filters {
@@ -1207,8 +1207,8 @@ sup {
   width: 220px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 45px;
   bottom: 0;
   left: 0;
   text-align: center;
@@ -1219,7 +1219,7 @@ sup {
   vertical-align: top;
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   color: #666666;
   line-height: 18px;
   font-size: 16px;
@@ -1230,7 +1230,7 @@ sup {
   vertical-align: top;
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   color: #666666;
   line-height: 18px;
   font-size: 16px;
@@ -1247,15 +1247,16 @@ sup {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .item-content .btn {
+  font-size: 16px;
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
-  text-transform: lowercase;
-  padding-left: 73px;
-  padding-right: 73px;
+  text-transform: uppercase;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .item-content .btn:active {
   color: #ffffff;
@@ -1349,6 +1350,7 @@ sup {
   padding: 0;
   font-size: 45px;
   margin-bottom: 43px;
+  font-weight: 500;
 }
 .close-btn {
   border: none;
@@ -1409,7 +1411,6 @@ sup {
   padding-left: 20px;
 }
 .error {
-  color: #e74246;
   -webkit-animation: shake 0.6s;
           animation: shake 0.6s;
 }
@@ -1418,7 +1419,6 @@ sup {
 }
 .feedback label {
   width: 110px;
-  color: #000000;
 }
 .feedback textarea {
   width: 760px;
