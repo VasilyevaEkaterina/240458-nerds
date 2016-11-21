@@ -990,6 +990,7 @@ sup {
   opacity: 0.3;
 }
 .filter-btn {
+  font-family: "Roboto", "Arial", sans-serif;
   display: inline-block;
   vertical-align: top;
   width: 260px;
@@ -1079,14 +1080,17 @@ sup {
 .arrows {
   float: right;
   width: 40px;
+  position: relative;
 }
 .arrows a {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .arrow-down::before {
   position: absolute;
   content: "";
-  top: 9px;
+  top: 8px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -1096,7 +1100,7 @@ sup {
 .arrow-down:hover::before {
   position: absolute;
   content: "";
-  top: 9px;
+  top: 8px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -1106,8 +1110,8 @@ sup {
 .arrow-up::before {
   position: absolute;
   content: "";
-  top: 9px;
-  left: 27px;
+  top: 8px;
+  left: 28px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -1117,8 +1121,8 @@ sup {
 .arrow-up:hover::before {
   position: absolute;
   content: "";
-  top: 9px;
-  left: 27px;
+  top: 8px;
+  left: 28px;
   width: 0;
   height: 0;
   border-left: 4.5px solid transparent;
@@ -1325,7 +1329,8 @@ sup {
   position: fixed;
   z-index: 2000;
   top: 50px;
-  left: 250px;
+  transform: translateX(-50%);
+  left: 50%;
   width: 760px;
   color: #000000;
   background: #ffffff;
@@ -1400,6 +1405,7 @@ sup {
   clear: both;
 }
 .feedback input[type="text"] {
+  font-family: "Roboto", "Arial", sans-serif;
   width: 340px;
   height: 50px;
   border: none;
@@ -1421,6 +1427,7 @@ sup {
   width: 110px;
 }
 .feedback textarea {
+  font-family: "Roboto", "Arial", sans-serif;
   width: 760px;
   margin-top: 12px;
   margin-bottom: 47px;
@@ -1448,14 +1455,14 @@ sup {
   clear: both;
 }
 @-webkit-keyframes bounce {
-  0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
-  70% { -webkit-transform: translateX(30px); transform: translateX(30px); }
+  0% { -webkit-transform: translateX(-100px); transform: translateX(-100px); }
+  60% { -webkit-transform: translateX(30px); transform: translateX(30px); }
   90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
   100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
 @keyframes bounce {
-  0% { -webkit-transform: translateX(-2000px); transform: translateX(-2000px); }
-  70% { -webkit-transform: translateX(30px); transform: translateX(30px); }
+  0% { -webkit-transform: translateX(-100px); transform: translateX(-100px); }
+  60% { -webkit-transform: translateX(30px); transform: translateX(30px); }
   90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
   100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
